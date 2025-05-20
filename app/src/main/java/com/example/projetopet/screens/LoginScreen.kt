@@ -321,7 +321,22 @@ fun LoginScreen(modifier: Modifier = Modifier) {
 
                     Spacer( modifier = Modifier .height(7.dp))
                     Text(
-                        text = "Cidade*",
+                        text = "Caso faça parte de uma ONG, coloque no espaço abaixo seu site*",
+                        fontWeight = FontWeight.ExtraBold,
+                        fontSize = 15.sp,
+                        color = Color.White
+                    )
+                    Spacer( modifier = Modifier .height(3.dp))
+                    OutlinedTextField(
+                        value = "",
+                        onValueChange = {},
+                        modifier = Modifier .fillMaxWidth(),
+                        colors = TextFieldDefaults.colors(),
+                        shape = RoundedCornerShape(10.dp),
+                    )
+                    Spacer( modifier = Modifier .height(7.dp))
+                    Text(
+                        text = "Preferencia de Animal*",
                         fontWeight = FontWeight.ExtraBold,
                         fontSize = 20.sp,
                         color = Color.White
@@ -334,6 +349,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                         colors = TextFieldDefaults.colors(),
                         shape = RoundedCornerShape(10.dp),
                     )
+
 
                 }
             }
